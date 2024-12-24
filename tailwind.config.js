@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        INTR: ["Inter", "serif"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
