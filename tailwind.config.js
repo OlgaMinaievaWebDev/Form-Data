@@ -6,6 +6,11 @@ export default {
       fontFamily: {
         INTR: ["Inter", "serif"],
       },
+      colors: {
+        neonGreen: "#33ff01",
+        whiteText: "#ffffff",
+        border: "#9A9A9A",
+      },
     },
   },
   plugins: [require("daisyui")],

@@ -1,15 +1,18 @@
 function FormData() {
+  const handleFormData = (e) => {
+    e.preventDefault();
+  };
   return (
-    <div className="hero bg-base-200 min-h-screen">
+    <div className="hero bg-base-200 min-h-screen font-INTR">
       <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
-        <form className="card-body">
+        <form className="card-body" onSubmit={handleFormData}>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Full Name</span>
             </label>
             <input
               type="text"
-              placeholder="Olga Minaieva"
+              placeholder="Your Full Name"
               className="input input-bordered"
               required
             />
@@ -127,19 +130,64 @@ function FormData() {
           <p className="mt-5 ">
             What holiday movies have you watched this year?{" "}
           </p>
-          <div className="form-control">
+          <div className="flex items-center">
             <input
               type="checkbox"
               defaultChecked
               className="checkbox checkbox-accent"
             />
-            <label className="cursor-pointer label">
-              <span className="label-text">Elf (2003</span>
+            <label className="cursor-pointer ml-2">
+              <span className="label-text">Elf (2203)</span>
+            </label>
+          </div>
+          <div className="flex items-center">
+            <input
+              type="checkbox"
+              defaultChecked
+              className="checkbox checkbox-accent"
+            />
+            <label className="cursor-pointer ml-2">
+              <span className="label-text">Home Alone (1990)</span>
+            </label>
+          </div>
+          <div className="flex items-center">
+            <input
+              type="checkbox"
+              defaultChecked
+              className="checkbox checkbox-accent"
+            />
+            <label className="cursor-pointer ml-2">
+              <span className="label-text">The Grinch (1966)</span>
+            </label>
+          </div>
+          <div className="flex items-center">
+            <input
+              type="checkbox"
+              defaultChecked
+              className="checkbox checkbox-accent"
+            />
+            <label className="cursor-pointer ml-2">
+              <span className="label-text">It is a wonderful Life (1946)</span>
+            </label>
+          </div>
+          <div className="flex items-center">
+            <input
+              type="checkbox"
+              defaultChecked
+              className="checkbox checkbox-accent"
+            />
+            <label className="cursor-pointer ml-2">
+              <span className="label-text">Die Hard (1988)</span>
             </label>
           </div>
 
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Login</button>
+            <button
+              className="btn bg-accent text-white border border-accent hover:bg-accent-focus hover:border-accent-focus"
+              type="submit"
+            >
+              Submit
+            </button>
           </div>
         </form>
       </div>
